@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+
 import CommonProps from './CommonProps'
 
 function LikeImageProps() {
@@ -6,7 +6,7 @@ function LikeImageProps() {
     <CommonProps>
       {
         ({like,handleLike}) => {
-          <button onClick={handleLike}>Like Image {like}</button>
+          return <button onClick={handleLike}>Like Image {like}</button>
         }
       }
     </CommonProps>

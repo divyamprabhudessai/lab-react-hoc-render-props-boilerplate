@@ -1,10 +1,10 @@
 import './App.css';
-import LikeImage from './components/LikeImage';
-import LikePost from './components/LikePost';
-import LikeImageHOC from './components/HOC/LikeImageHOC'
-import LikePostHOC from './components/HOC/LikePostHOC'
-import LikePostProps from './components/RenderProps/LikePostProps'
-import LikeImageProps from './components/RenderProps/LikeImageProps'
+// import LikeImage from './components/LikeImage';
+// import LikePost from './components/LikePost';
+import LikeImageHOC from './components/HOC/LikeImageHOC';
+import LikePostHOC from './components/HOC/LikePostHOC';
+import LikeImageProps from './components/RenderProps/LikeImageProps';
+import LikePostProps from './components/RenderProps/LikePostProps';
 
 function App() {
   return (
@@ -15,20 +15,19 @@ function App() {
         <LikeImage/>
       </div> */}
 
-      {/* Part-1 HOC Logic */}
-      {/* <h1>Blog uding HOC</h1>
+      {/* Part I - HOC Logic */}
+      <h1>Blog Using HOC</h1>
       <div className='buttons'>
-        <LikeImageHOC/>
-        <LikePostHOC/>
-      </div> */}
-
-      {/*  */}
-        <h1>Blog using Render Props</h1>
-      <div className='buttons'>
-        <LikeImageProps/>
-        <LikePostProps/>
+          <LikeImageHOC/>
+          <LikePostHOC/>
       </div>
 
+      {/* Part II - Props Logic */}
+      <h1>Blog Using Props</h1>
+      <div className='buttons'>
+          <LikeImageProps/>
+          <LikePostProps/>
+      </div>
     </div>
   );
 }
